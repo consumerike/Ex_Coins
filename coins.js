@@ -4,7 +4,7 @@ function coins(amount) {
 	// console.log(this.dimes = amount / (.10));
 	// console.log(this.nickels = amount / (.05));
 	// console.log(this.pennies = amount / (.01));
-		var quarters = .25;
+ 		var quarters = .25;
 		var dimes = .10;
 		var nickels = .05;
 		var pennies = .01;
@@ -14,19 +14,19 @@ function coins(amount) {
 	    	console.log("Quarters: " + numQuarters);
 	    	amount -= (numQuarters * quarters);
 		}
-	    else if ((amount) / (dimes) > 1) {
+	    if ((amount) / (dimes) > 1) {
 			var numDimes = Math.floor((amount) / (dimes));
 			console.log("Dimes: " +numDimes);
 			amount -= (numDimes * dimes); 
 		}
 
-	   else if ((amount) / (nickels) > 1) {
+	    if ((amount) / (nickels) > 1) {
 			var numNickels = Math.floor((amount) / (nickels));
 			console.log("Nickels: " +numNickels);
 			amount -= (numNickels * nickels); 
 		}
 
-		else if (amount / (pennies) > 1) {
+	    if (amount / (pennies) > 1) {
 			var numPennies = Math.floor((amount) / (pennies));
 			console.log("Pennies: " + numPennies);
 			console.log(amount)
